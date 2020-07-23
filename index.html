@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+ var cuenta={
+          NameCliente:"Jorge",
+          SaldoCliente:0,
+          ingresar:function(){
+            var vr1 = document.getElementById('x1').value;
+
+          },
+          extraer:function(){
+            var vr2 = document.getElementById('x2').value;
+              
+          }, 
+
+          informar:function(){
+            document.write( "Nombre Cliente: "+cuenta.NameCliente +'<br>' );
+            document.write( "Saldo Total Cliente: "+cuenta.SaldoCliente +'<br>' );
+
+            }, 
+            
+        };
+document.write( "Nombre Cliente: "+cuenta.NameCliente +'<br>' ); 
+</script>
+<form >
+        Ingesar Saldo:<br>
+        <input type="text" id="x1">
+        <input type="button" value="Enter" onclick="cuenta.ingresar();">
+        <br>
+        Extraer Saldo:<br>
+        <input type="text" id="x2">
+        <input type="button" value="Enter" onclick="cuenta.extraer();">
+        <br>
+        <br><br>
+        <input type="button" value="Estado" onclick="cuenta.informar();">
+        <br>
+</form>
+</body>
+</html>
