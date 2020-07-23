@@ -13,11 +13,11 @@
           SaldoCliente:0,
           ingresar:function(){
             var vr1 = document.getElementById('x1').value;
-
+            cuenta.SaldoCliente=cuenta.SaldoCliente+vr1;
           },
           extraer:function(){
             var vr2 = document.getElementById('x2').value;
-              
+            cuenta.SaldoCliente=cuenta.SaldoCliente-vr2; 
           }, 
 
           informar:function(){
